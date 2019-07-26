@@ -1,0 +1,42 @@
+{
+  "name": "arealidea-secret",
+  "version": "0.1.0",
+  "description": "Service for the secure exchange of text data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gudzii-ov/arealidea-secret.git"
+  },
+  "keywords": [
+    "nodejs",
+    "react",
+    "test-assignment"
+  ],
+  "author": "Oleg Gudzii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gudzii-ov/arealidea-secret/issues"
+  },
+  "homepage": "https://github.com/gudzii-ov/arealidea-secret#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.2",
+    "babel-jest": "^24.8.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "jest": "^24.8.0",
+    "jest-cli": "^24.8.0",
+    "nock": "^10.0.6"
+  }
+}
