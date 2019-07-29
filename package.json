@@ -4,7 +4,7 @@
   "description": "Service for the secure exchange of text data.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "babel-node server/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,9 @@
     "url": "https://github.com/gudzii-ov/arealidea-secret/issues"
   },
   "homepage": "https://github.com/gudzii-ov/arealidea-secret#readme",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.17.1"
+  },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
