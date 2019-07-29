@@ -4,7 +4,8 @@
   "description": "Service for the secure exchange of text data.",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node server/index.js"
+    "start": "babel-node server/index.js",
+    "lint": "npx eslint ."
   },
   "repository": {
     "type": "git",
