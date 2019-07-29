@@ -7,4 +7,4 @@ server.get('/', (req, res) => {
   res.send('Welcome to Secret service');
 });
 
-server.listen(port, () => console.log(`Secret server is running on port ${port}`))
+server.listen(port, () => console.log(`Secret server is running on port ${port}`));
