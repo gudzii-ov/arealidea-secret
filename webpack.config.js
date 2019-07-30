@@ -1,4 +1,5 @@
 module.exports = {
+  mode: process.env.NODE_ENV || 'development',
   entry: [
     `${__dirname}/front/index.jsx`,
   ],
@@ -7,14 +8,19 @@ module.exports = {
   },
   output: {
     path: `${__dirname}/dist/public`,
-    publicPath: '/assets/',
   },
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.jsx/,
         exclude: /node_modules/,
-        use: 'babel-loader',
+        use: {
+          loader: 'babel-loader',
+        },
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
