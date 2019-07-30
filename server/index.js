@@ -3,9 +3,11 @@ import express from 'express';
 const server = express();
 const port = 3000;
 
+server.set('view engine', 'pug');
+
 server.route('/')
   .get((req, res) => {
-    res.send('Welcome to Secret service!');
+    res.render('index', { title: 'Secret', message: 'Welcome to secret service' });
   })
   .post((req, res) => {
     res.send('Dummy post secret');
