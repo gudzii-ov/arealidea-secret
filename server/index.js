@@ -1,9 +1,11 @@
+import path from 'path';
 import express from 'express';
 
 const server = express();
 const port = 3000;
 
 server.set('view engine', 'pug');
+server.use('/assets', express.static(path.join(`${__dirname}/../dist/public`)));
 
 server.route('/')
   .get((req, res) => {
