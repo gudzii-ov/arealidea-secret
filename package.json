@@ -6,7 +6,8 @@
   "scripts": {
     "start": "npx nodemon --exec npx babel-node server/index.js",
     "lint": "npx eslint .",
-    "build": "rm -rf dist && webpack -p"
+    "build": "rm -rf dist && webpack -p",
+    "watch-front": "rm -rf dist && webpack -p --watch"
   },
   "repository": {
     "type": "git",
